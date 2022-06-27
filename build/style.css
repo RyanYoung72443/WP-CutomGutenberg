@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+}
+img {
+    max-width: 100%;
+}
+.section {
+    min-height: 800px;
+    padding: 100px 0;
+}
+hr {
+    border: 2px solid #e1e1e1;
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+/** Blocks **/
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.testimonial-block {
+    border-top: 4px solid #ed143d;
+    padding: 1rem;
+    position: relative;
+}
+.testimonial-block blockquote::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 400px;
+    height: 400px;
+    background-image: url('../img/quote.svg');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 300px;
+    opacity: .3;
+    z-index: -1;
+}
+.testimonial-block blockquote{
+    padding-left: 150px;
+    margin: 3rem;
+}
+
+.testimonial-info {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.testimonial-info img {
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.testimonial-info p {
+    font-family: 'Montserrat', sans-serif;
+    color: #ed143d;
+    font-weight: 700;
+}
+
+/** Hero **/
+.hero-block {
+    background:  url(../img/hero-image.jpg);
+    background-repeat: no-repeat;
+    background-position:  bottom center;
+    background-size: cover;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding-top: 120px;
+}
+.hero-block h1 {
+    font-weight: 700;
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0 2rem;
+    width: 100%;
+}
+.hero-block p {
+    font-size: 22px;
+}
+
+/*** image & Text Block **/
+
+.image-text-block {
+    padding: 100px 0;
+    background-color: dodgerblue;
+}
+.image-text-block .container{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.image-text-block .content {
+    flex: 0 0 60%;
+    color: white;
+}
+.image-text-block h1 {
+    font-family: 'Staatliches', cursive;
+    font-weight: 400;
+    margin: 0;
+    font-size: 60px;
+}
+.image-text-block .content 
+.image-text-block .image {
+    flex: 0 1 calc(40% - 2rem);
+}
+.image-text-block .button {
+    background-color: white;
+    padding: 10px 30px;
+    font-size: 18px;
+    margin-top: 30px;
+    text-align: center;
+    color: dodgerblue;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+/*** Latest recipes **/
+.latest-recipes {
+    list-style: none;
+    padding: 0;
+}
+@media (min-width: 768px) {
+    .latest-recipes {
+        display: flex;
+        justify-content: space-between;
+    }
+    .latest-recipes li {
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+}
+.latest-recipes .content {
+    padding: 10px 20px;
+}
+.latest-recipes h2 {
+    color: black;
+    font-size: 30px;
+    margin: 0;
+    line-height: 1.2;
+}
+.latest-recipes .meta span {
+    color: #3f9c1b;
+    font-weight: bold;
+}
+.latest-recipes .button {
+    background-color: #3f9c1b;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}

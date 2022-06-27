@@ -1,0 +1,17 @@
+{
+  "name": "ga-gutenberg-blocks",
+  "version": "1.0.0",
+  "description": "Custom Gutenberg blocks",
+  "main": "index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start"
+  },
+  "author": "Ryan Young",
+  "license": "ISC",
+  "dependencies": {
+    "@svgr/webpack": "^6.2.1",
+    "@wordpress/scripts": "^23.2.0",
+    "url-loader": "^4.1.1"
+  }
+}
